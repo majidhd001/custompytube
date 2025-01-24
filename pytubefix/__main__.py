@@ -136,7 +136,7 @@ class YouTube:
         self.watch_url = f"https://youtube.com/watch?v={self.video_id}"
         self.embed_url = f"https://www.youtube.com/embed/{self.video_id}"
 
-        self.client = 'WEB' if use_po_token else client
+        self.client = 'ANDROID_VR' if use_po_token else client
 
         # oauth can only be used by the TV and TV_EMBED client.
         self.client = 'TV' if use_oauth else self.client
